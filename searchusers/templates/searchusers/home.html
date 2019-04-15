@@ -1,0 +1,11 @@
+{% extends 'searchusers/search.html' %}
+
+{% block content %}
+    {% if users %}
+        {% for user in users %}
+            {{ forloop.counter }}.{{ user.username }}<br>
+        {% endfor %}
+    {% else %}
+        <p>There is no user with this name</p>
+    {% endif %}
+{% endblock content %}

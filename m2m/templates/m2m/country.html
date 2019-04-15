@@ -1,0 +1,15 @@
+{% load mptt_tags %}
+<ul>
+    {% recursetree country %}
+        <li>
+            {{ node.country }}
+            
+            {% if not node.get_children %}
+
+                <ul class="children">
+                    {{ node.clinic_name }}
+                </ul>
+            {% endif %}
+        </li>
+    {% endrecursetree %}
+</ul>

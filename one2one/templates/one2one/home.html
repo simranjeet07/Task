@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Engine&Car</title>
+    </head>
+    <body>
+        {% for obj in engine_obj %}
+            <dl>
+                <dt style="color:red">{{ obj.name }}</dt>
+                <dd>{{ obj.car.name }}</dd>
+            </dl>
+        {% endfor %}
+    </body>
+</html>

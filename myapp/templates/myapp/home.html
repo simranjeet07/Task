@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Album&Songs</title>
+    </head>
+    <body>
+        {{ song_obj }}
+        {% for obj in album_obj %}
+            <dl>
+                <dt style="color:red">{{ obj.album_title }}--{{ obj.album_singer }}</dt>
+                {% for q in obj.songs.all %}
+                    <dd style="color:green;">{{ q.song_name }}</dd>
+                {% endfor %}
+            </dl>
+        {% endfor %}
+        
+    </body>
+</html>

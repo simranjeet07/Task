@@ -1,0 +1,11 @@
+{% extends "cmcas/base.html" %}
+
+{% block content %}
+
+<h1>Delete</h1>
+<form method="POST">{% csrf_token %}
+<input type="submit" name="" value="Delete">
+<a href="{% url 'list' %}">Cancel</a>
+</form>
+
+{% endblock content %}

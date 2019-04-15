@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Group</title>
+    </head>
+    <body>
+        {% for obj in group_obj %}
+            <dl>
+                <dt style="color:red">{{ obj.group_name }}</dt>
+                
+                {% for q in obj.members.all %}
+                    <dd style="color:green;">{{ q.person_name }}</dd>
+                {% endfor %}
+                
+            </dl>
+        {% endfor %}
+    </body>
+</html>

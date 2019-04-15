@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search Users</title>
+    </head>
+    <body>
+        <form method="POST">{% csrf_token %}
+          <input type="text" name="search" placeholder="search">  
+          <input type="submit" value="Search">
+        </form>
+        {% block content %}
+        {% endblock content %}
+    </body>
+</html>

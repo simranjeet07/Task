@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            ModelManager
+        </title>
+    </head>
+    <body>
+        {% if obj %}
+        {% for q in obj %}
+            {{ q.first_name }}
+        {% endfor %}
+        {% endif %}
+    </body>
+</html>
