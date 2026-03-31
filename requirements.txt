@@ -1,6 +1,6 @@
 certifi==2019.3.9
 chardet==3.0.4
-Django==1.11
+Django==2.2.24
 django-js-asset==1.2.2
 django-mptt==0.9.1
 idna==2.8
